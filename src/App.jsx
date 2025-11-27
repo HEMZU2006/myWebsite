@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BlogPost from './pages/BlogPost';
+import ProjectPost from './pages/ProjectPost';
 import './App.css';
 
 function App() {
