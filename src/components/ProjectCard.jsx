@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectCard.css';
 
-const ProjectCard = ({ title, description, image, tags, link }) => {
+const ProjectCard = ({ title, description, image, tags = [], link }) => {
     const isInternal = link.startsWith('/');
 
     if (isInternal) {

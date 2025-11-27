@@ -11,11 +11,15 @@ const Home = () => {
 
     useEffect(() => {
         async function loadContent() {
-            const blogData = await getBlogs();
-            setBlogs(blogData);
+            try {
+                const blogData = await getBlogs();
+                setBlogs(blogData);
 
-            const projectData = await getProjects();
-            setProjects(projectData);
+                const projectData = await getProjects();
+                setProjects(projectData);
+            } catch (error) {
+                console.error("Failed to load content:", error);
+            }
         }
         loadContent();
     }, []);
