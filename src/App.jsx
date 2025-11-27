@@ -130,6 +130,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/project/:slug" element={<ProjectPost />} />
           </Routes>
         </div>
       </div>

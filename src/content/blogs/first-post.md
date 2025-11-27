@@ -1,6 +1,6 @@
 ---
 title: My First Markdown Blog
-date: 2025-11-27
+date: 27 November 2025
 excerpt: This is a sample blog post written in Markdown. It supports code blocks, lists, and more!
 ---
 

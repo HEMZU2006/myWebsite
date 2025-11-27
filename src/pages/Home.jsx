@@ -3,16 +3,21 @@ import SkillCard from '../components/SkillCard';
 import ProjectCard from '../components/ProjectCard';
 import BlogCard from '../components/BlogCard';
 import { getBlogs } from '../utils/blogLoader';
+import { getProjects } from '../utils/projectLoader';
 
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        async function loadBlogs() {
-            const data = await getBlogs();
-            setBlogs(data);
+        async function loadContent() {
+            const blogData = await getBlogs();
+            setBlogs(blogData);
+
+            const projectData = await getProjects();
+            setProjects(projectData);
         }
-        loadBlogs();
+        loadContent();
     }, []);
 
     const skills = [
@@ -51,33 +56,6 @@ const Home = () => {
             icon: "👁️",
             description: "Implementing vision systems for hardware and software integration.",
             tags: ["OpenCV", "Object Detection", "Tracking"]
-        }
-    ];
-
-    const projects = [
-        {
-            title: "BrickSpace",
-            description: "A Team based VR game where players must work together to build a structure using bricks. ",
-            tags: ["C++", "Unreal", "VR", "Meta Quest", "Team Based"],
-            link: "#"
-        },
-        {
-            title: "Robo-Arm",
-            description: "A Team based project where a robotic arm must collect and sort objects.",
-            tags: ["Python", "OpenCV", "Zed Cameras", "Team Based", "Solidworks", "PCB Design"],
-            link: "#"
-        },
-        {
-            title: "Stewart Platform",
-            description: "Custom designed Stewart Platform  to Simulate 6 degrees of freedom.",
-            tags: ["Solidworks", "PCB Design", "ESP32", "Firmware", "Digital Fabrication", "Solo Project"],
-            link: "#"
-        },
-        {
-            title: "Solar Nexus",
-            description: "A unity based game where players must navigate a solar system to collect resources.",
-            tags: ["C#", "Unity", "Game Dev", "Solo Project"],
-            link: "#"
         }
     ];
 
@@ -146,7 +124,11 @@ const Home = () => {
                     <h2 className="section-title">Selected Projects</h2>
                     <div className="grid projects-grid">
                         {projects.map((project, index) => (
-                            <ProjectCard key={index} {...project} />
+                            <ProjectCard
+                                key={index}
+                                {...project}
+                                link={`/project/${project.slug}`}
+                            />
                         ))}
                     </div>
                 </div>
