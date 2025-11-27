@@ -29,10 +29,28 @@ const Home = () => {
             tags: ["C", "KiCad", "ESP32", "Arduino", "RTOS"]
         },
         {
-            title: "AI & Robotics",
-            icon: "🤖",
-            description: "Training intelligent agents and controlling autonomous robots.",
-            tags: ["PyTorch", "ROS", "Computer Vision", "RL"]
+            title: "AI & Learning Agents",
+            icon: "🧠",
+            description: "Simulating behavior through reinforcement learning and autonomous systems.",
+            tags: ["Reinforcement Learning", "TensorFlow", "PyTorch", "Agents"]
+        },
+        {
+            title: "CAD & Fabrication",
+            icon: "⚙️",
+            description: "Designing components in SolidWorks and bringing them to life with 3D printing.",
+            tags: ["SolidWorks", "3D Printing", "Prototyping"]
+        },
+        {
+            title: "VR / AR",
+            icon: "🥽",
+            description: "Developing virtual and augmented reality experiences.",
+            tags: ["Oculus", "ARKit", "Spatial Computing"]
+        },
+        {
+            title: "Computer Vision",
+            icon: "👁️",
+            description: "Implementing vision systems for hardware and software integration.",
+            tags: ["OpenCV", "Object Detection", "Tracking"]
         }
     ];
 

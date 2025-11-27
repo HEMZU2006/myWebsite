@@ -61,7 +61,7 @@ function App() {
         // Normal movement
         this.y += this.z * 0.5;
 
-        // Gravity well effect
+        // Spotlight effect (no gravity pull)
         if (mouse.x != null && mouse.y != null) {
           const dx = mouse.x - this.x;
           const dy = mouse.y - this.y;
@@ -69,12 +69,6 @@ function App() {
 
           if (distance < GRAVITY_RADIUS) {
             this.isAffected = true;
-            const force = (GRAVITY_RADIUS - distance) / GRAVITY_RADIUS;
-            const angle = Math.atan2(dy, dx);
-
-            // Pull towards mouse
-            this.x += Math.cos(angle) * force * 5 * GRAVITY_STRENGTH;
-            this.y += Math.sin(angle) * force * 5 * GRAVITY_STRENGTH;
           } else {
             this.isAffected = false;
           }
