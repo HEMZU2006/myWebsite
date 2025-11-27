@@ -127,13 +127,13 @@ function App() {
   const blogs = [
     {
       title: "My Journey into Reinforcement Learning",
-      date: "October 24, 2023",
+      date: "November 25, 2025",
       excerpt: "How I went from simple A* algorithms to training agents that can navigate complex 3D environments.",
       link: "#"
     },
     {
       title: "Designing my first Custom PCB",
-      date: "September 15, 2023",
+      date: "April 18, 2025",
       excerpt: "Lessons learned from fabricating a microcontroller board for my smart home project. Mistakes were made!",
       link: "#"
     },
@@ -152,11 +152,11 @@ function App() {
       <header className="hero">
         <div className="container">
           <h1 className="hero-title">
-            Hi, I'm <span className="gradient-text">Heman</span>.
+            Hi, I'm <span className="gradient-text">Hemant</span>.
           </h1>
           <p className="hero-subtitle">
             I'm a Hardware & Software Engineer. <br />
-            I build <strong>Games</strong>, design <strong>PCBs</strong>, and train <strong>AI Agents</strong>.
+            I build <strong>Games</strong>, design <strong>Systems</strong>, and train <strong>AI Agents</strong>.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">See My Work</a>
@@ -203,12 +203,10 @@ function App() {
           <div className="about-content">
             <h2 className="section-title">About Me</h2>
             <p>
-              I've always been fascinated by how things work—both inside a computer and out in the real world.
+              I’m a software engineer with a builder’s mindset. My passion lies in developing autonomous systems, training learning models, and crafting immersive VR experiences.
             </p>
             <p>
-              I don't just write code; I build systems. Whether it's soldering a custom microcontroller,
-              training a reinforcement learning model to fly a drone, or creating an immersive VR game,
-              I love bridging the gap between digital software and physical hardware.
+              I love creating systems where the virtual and physical worlds collide. From developing VR programs to training reinforcement learning agents, I focus on building complete systems. I enjoy the hands-on nature of hardware design just as much as the logic of software engineering. I'm at my best when I get to combine them.
             </p>
           </div>
         </div>
@@ -219,9 +217,12 @@ function App() {
           <h2 className="section-title">Get In Touch</h2>
           <div className="contact-content">
             <p>Interested in collaborating on a project or just want to say hi?</p>
-            <a href="mailto:hello@example.com" className="btn btn-primary">Send Me an Email</a>
+            <a href="mailto:hemantrs2006@gmail.com" className="btn btn-primary">Send Me an Email</a>
             <div className="social-links">
-              {/* Add social icons/links here later */}
+              <a href="mailto:hemantrs2006@gmail.com" className="social-link">Gmail</a>
+              <a href="https://www.linkedin.com/in/hemant-rajesh-kumar" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
+              <a href="https://github.com/HEMZU2006" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
+              <a href="https://www.instagram.com/wtf__hemzu/?next=%2F" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
             </div>
           </div>
         </div>
@@ -229,7 +230,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Heman. Built with React & Vite.</p>
+          <p>&copy; {new Date().getFullYear()} Hemant. Built with React & Vite.</p>
         </div>
       </footer>
     </div>

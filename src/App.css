@@ -144,6 +144,29 @@
   color: #ccc;
 }
 
+.social-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
 /* Footer */
 .footer {
   padding: 2rem 0;
