@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BlogPost from './pages/BlogPost';
 import ProjectPost from './pages/ProjectPost';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
@@ -127,6 +128,7 @@ function App() {
     <Router>
       <div className="app">
         <canvas ref={canvasRef} className="background-canvas" />
+        <Navbar />
         <div className="content-wrapper">
           <Routes>
             <Route path="/" element={<Home />} />

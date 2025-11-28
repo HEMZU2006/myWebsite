@@ -1,12 +1,12 @@
 ---
-title: My First Markdown Blog
+title: My First Blog
 date: 27 November 2025
-excerpt: This is a sample blog post written in Markdown. It supports code blocks, lists, and more!
 ---
 
 # Hello World!
 
-This is my first blog post on my new portfolio website. I can write **bold text**, *italic text*, and even code blocks:
+## Why Blogs? 
+This is my first blog post for this website and ever. Quite honestly i have never written a blog before and well i never really wanted to but i was told think of blog post as a **public journal** and i was intriqued   
 
 ```javascript
 console.log("Hello from the blog!");

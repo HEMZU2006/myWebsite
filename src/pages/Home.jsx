@@ -35,7 +35,7 @@ const Home = () => {
             title: "Embedded Systems",
             icon: "🔌",
             description: "Designing custom PCBs and writing firmware for microcontrollers.",
-            tags: ["C", "KiCad", "ESP32", "Arduino", "RTOS"]
+            tags: ["C++", "ESP32", "Arduino", "PCB Design"]
         },
         {
             title: "AI & Learning Agents",
@@ -53,7 +53,7 @@ const Home = () => {
             title: "VR / AR",
             icon: "🥽",
             description: "Developing virtual and augmented reality experiences.",
-            tags: ["Oculus", "ARKit", "Spatial Computing"]
+            tags: ["Oculus", "Unreal", "Spatial Computing"]
         },
         {
             title: "Computer Vision",
@@ -65,7 +65,7 @@ const Home = () => {
 
     return (
         <>
-            <header className="hero">
+            <header id="home" className="hero">
                 <div className="container">
                     <h1 className="hero-title">
                         Hi, I'm <span className="gradient-text">Hemant</span>.
