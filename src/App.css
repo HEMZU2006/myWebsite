@@ -45,7 +45,6 @@
   justify-content: center;
   text-align: center;
   padding-top: 4rem;
-  /* Offset for fixed header if added later */
 }
 
 .hero-title {
@@ -115,11 +114,11 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* About */
+/* About - Content Left Aligned, Header Centered (inherited) */
 .about-content {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   color: #ddd;
 }
@@ -128,7 +127,7 @@
   margin-bottom: 1.5rem;
 }
 
-/* Contact */
+/* Contact - Centered */
 .contact-section {
   text-align: center;
 }
@@ -154,8 +153,10 @@
 
 .social-link {
   color: #fff;
+  /* Normal text color (white) */
   font-size: 1.1rem;
   font-weight: 500;
+  text-decoration: none;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;

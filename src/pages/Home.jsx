@@ -109,19 +109,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="about" className="section about-section">
-                <div className="container">
-                    <div className="about-content">
-                        <h2 className="section-title">About Me</h2>
-                        <p>
-                            I’m a software engineer with a builder’s mindset. My passion lies in developing autonomous systems, training learning models, and crafting immersive VR experiences.
-                        </p>
-                        <p>
-                            I love creating systems where the virtual and physical worlds collide. From developing VR programs to training reinforcement learning agents, I focus on building complete systems. I enjoy the hands-on nature of hardware design just as much as the logic of software engineering. I'm at my best when I get to combine them.
-                        </p>
-                    </div>
-                </div>
-            </section>
+
 
             <section id="projects" className="section projects-section">
                 <div className="container">
@@ -138,12 +126,25 @@ const Home = () => {
                 </div>
             </section>
 
+            <section id="about" className="section about-section">
+                <div className="container">
+                    <div className="about-content">
+                        <h2 className="section-title">About Me</h2>
+                        <p>
+                            I’m a software engineer with a builder’s mindset. My passion lies in developing autonomous systems, training learning models, and crafting immersive VR experiences.
+                        </p>
+                        <p>
+                            I love creating systems where the virtual and physical worlds collide. From developing VR programs to training reinforcement learning agents, I focus on building complete systems. I enjoy the hands-on nature of hardware design just as much as the logic of software engineering. I'm at my best when I get to combine them.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <section id="contact" className="section contact-section">
                 <div className="container">
                     <h2 className="section-title">Get In Touch</h2>
                     <div className="contact-content">
                         <p>Interested in collaborating on a project or just want to say hi?</p>
-                        <a href="mailto:hemantrs2006@gmail.com" className="btn btn-primary">Send Me an Email</a>
                         <div className="social-links">
                             <a href="mailto:hemantrs2006@gmail.com" className="social-link">Gmail</a>
                             <a href="https://www.linkedin.com/in/hemant-rajesh-kumar" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
