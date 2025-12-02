@@ -17,4 +17,5 @@ This project involved designing and programming a robotic arm capable of autonom
 - **Hardware**: Custom 3D printed parts designed in SolidWorks and a custom PCB for power distribution.
 
 ## My Role
-I was responsible for the **Computer Vision** pipeline and the **PCB Design** for the motor controllers.
+I was responsible for the **Computer Vision** pipeline and the **Inverse Kinematics** and **Communicstions** algorithms for the motor controllers.
+
