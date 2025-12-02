@@ -43,13 +43,6 @@ const ProjectPost = () => {
                             <img src={project.image} alt={project.title} />
                         </div>
                     )}
-                    {project.link && (
-                        <div className="project-links">
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                                View Live Project
-                            </a>
-                        </div>
-                    )}
                 </header>
 
                 <div className="markdown-body">
